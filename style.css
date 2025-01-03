@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* Змінено, щоб уникнути зайвих відступів */
+    box-sizing: border-box;
+    /* Коректний розрахунок розмірів */
+}
+
+body {
+    scroll-behavior: smooth;
+    font-family: cursive;
+    width: 100%;
+    margin: 0;
+    background-color: lightskyblue;
+    font-size: 20px;
+    overflow-x: hidden;
+    /* Уникаємо горизонтального скролу */
+}
+
+.head-container {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    color: #061b3e;
+    padding: 10px;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+    background-color: #061b3e;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.sect-img {
+    width: 40%;
+    margin: auto 0;
+}
+
+article {
+    width: 50%;
+    padding: 20px;
+}
+
+section:hover{
+    transform: scale(1.1);
+    margin: 50px;
+    transition: 1s;
+}
+
+section img {
+    width: 100%;
+    height: auto;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 70px;
+    background-color: #061b3e;
+    z-index: 1;
+}
+
+nav a {
+    color: snow;
+    text-decoration: none;
+    margin: auto 0;
+}
+
+nav a:hover{
+    color: #1569fa;
+    transition: 1s;
+}
+
+main {
+    margin-top: 80px;
+    padding: 20px;
+}
+
+section {
+    scroll-margin-top: 85px;
+}
+
+footer {
+    padding: 20px;
+    background-color: #061b3e;
+    color: #E9F1FA;
+    width: 100vw;
+    /* Забезпечує всю ширину екрана */
+    margin: 0;
+    /* Усуває зовнішні відступи */
+    box-sizing: border-box;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer p,
+footer a {
+    color: #E9F1FA;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.socials {
+    display: inline-block;
+}
+
+.socials img {
+    width: 30px;
+    height: 30px;
+}
+
+.footer-author {
+    text-align: center;
+}
+
+.hov:hover{
+color: #1569fa;
+}
+
+.photo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo img{
+    padding: 20px;
+    max-width: 300px;
+}
